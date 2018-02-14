@@ -1,6 +1,6 @@
 [package]
 name = "rustysecrets-cli"
-version = "0.1.0-pre"
+version = "0.1.0"
 authors = ["Romain Ruetschi <romain.ruetschi@gmail.com>"]
 
 description = "rustysecrets-cli is a command-line wrapper around RustySecrets, a Rust implementation of threshold Shamir's secret sharing"
@@ -31,7 +31,7 @@ colored = "^1.5"
 [build-dependencies]
 clap = "^2.26"
 mime = "^0.3"
-git-build-version = "*"
+git-build-version = "^0.1"
 
 [profile.release]
 lto = true
