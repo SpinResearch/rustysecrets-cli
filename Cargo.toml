@@ -1,0 +1,47 @@
+[package]
+name = "rustysecrets-cli"
+version = "0.1.0-pre"
+authors = ["Romain Ruetschi <romain.ruetschi@gmail.com>"]
+
+description = "rustysecrets-cli is a command-line wrapper around RustySecrets, a Rust implementation of threshold Shamir's secret sharing"
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/SpinResearch/rustysecrets-cli"
+documentation = "https://github.com/SpinResearch/rustysecrets-cli#readme"
+repository = "https://github.com/SpinResearch/rustysecrets-cli"
+
+build = "build.rs"
+
+[[bin]]
+name = "rustysecrets"
+path = "src/main.rs"
+
+[dependencies]
+rusty_secrets = "^0.1.0"
+clap = "^2.26"
+colored = "^1.5"
+error-chain = "^0.11.0"
+mime = "^0.3"
+log = { version = "^0.4", features = ["std"] }
+
+[dev-dependencies]
+tempdir = "^0.3"
+colored = "^1.5"
+
+[build-dependencies]
+clap = "^2.26"
+mime = "^0.3"
+git-build-version = "*"
+
+[profile.release]
+lto = true
+
+[package.metadata.release]
+sign-commit = true
+upload-doc = false
+pre-release-commit-message = "Release version {{version}}"
+pro-release-commit-message = "Bump version to {{version}}"
+tag-message = "Release version {{version}}"
+tag-prefix = "v"
+dev-version-ext = "pre"
+
