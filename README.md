@@ -7,6 +7,10 @@
 
 > *rustysecrets-cli* is a command-line wrapper around [RustySecrets](https://github.com/SpinResearch/RustySecrets), a Rust implementation of threshold [Shamir's secret sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing).
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/163541.png)](https://asciinema.org/a/163541)
+
 ## Installation
 
     $ cargo install rustysecrets-cli
