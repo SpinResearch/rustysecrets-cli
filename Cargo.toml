@@ -1,6 +1,6 @@
 [package]
 name = "rustysecrets-cli"
-version = "0.1.1-pre"
+version = "0.2.0"
 authors = ["Romain Ruetschi <romain.ruetschi@gmail.com>"]
 
 description = "rustysecrets-cli is a command-line wrapper around RustySecrets, a Rust implementation of threshold Shamir's secret sharing"
